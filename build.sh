@@ -1,4 +1,4 @@
 #!/bin/bash
 . build/envsetup.sh
-lunch miku_merlinx-user
-make diva
+lunch evolution_merlinx-user
+make evolution
