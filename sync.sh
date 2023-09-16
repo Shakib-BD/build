@@ -15,3 +15,4 @@ echo "Check complete"
 wget https://raw.githubusercontent.com/mitsuav/workflow-test/main/KernelSU.patch
 cd kernel/xiaomi/mt6768
 git apply ../../../KernelSU.patch
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
