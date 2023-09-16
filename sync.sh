@@ -18,5 +18,6 @@ git apply ../../../KernelSU.patch
 curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
 
 # Nikita GCam PATCH
+cd ../../../
 rm device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
 wget https://api.ozip.my.id/NGCam_8.2.300-v1.8.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
