@@ -1,4 +1,4 @@
 #!/bin/bash
 . build/envsetup.sh
-lunch evolution_merlinx-user
-make evolution
+lunch exthm_merlinx-user
+make reimu
