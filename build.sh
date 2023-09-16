@@ -1,4 +1,4 @@
 #!/bin/bash
 . build/envsetup.sh
-lunch exthm_merlinx-user
-make reimu
+lunch lineage_merlinx-user
+make bacon
