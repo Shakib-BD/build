@@ -10,3 +10,8 @@ ls ../
 echo "Check work dir:"
 ls
 echo "Check complete"
+
+# KernelSU Patch
+wget https://raw.githubusercontent.com/mitsuav/workflow-test/main/KernelSU.patch
+cd kernel/xiaomi/mt6768
+git apply ../../../KernelSU.patch
