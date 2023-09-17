@@ -26,8 +26,8 @@ wget -q https://api.ozip.my.id/NGCam_8.2.300-v1.8.apk -O device/xiaomi/mt6768-co
 wget -q https://api.ozip.my.id/media_codecs.patch
 wget -q https://api.ozip.my.id/media_extractor.patch
 cd frameworks/av
-git apply ../../media_codecs.patch
-git apply ../../media_extractor.patch
+git am ../../media_codecs.patch
+git am ../../media_extractor.patch
 
 # Evox: Change default wallpaper (W.I.P)
 cd ../../vendor/evolution/rro_overlays/EvolutionXConfigOverlay/res/drawable-nodpi
