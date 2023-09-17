@@ -20,11 +20,11 @@ curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh
 # mt6768-common: Nikita GCam PATCH
 cd ../../../
 rm device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
-wget https://api.ozip.my.id/NGCam_8.2.300-v1.8.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
+wget -q https://api.ozip.my.id/NGCam_8.2.300-v1.8.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
 
 # Media: mediatek: codecs & extractor PATCH
-wget https://api.ozip.my.id/media_codecs.patch
-wget https://api.ozip.my.id/media_extractor.patch
+wget -q https://api.ozip.my.id/media_codecs.patch
+wget -q https://api.ozip.my.id/media_extractor.patch
 cd frameworks/av
 git apply ../../media_codecs.patch
 git apply ../../media_extractor.patch
@@ -32,4 +32,4 @@ git apply ../../media_extractor.patch
 # Evox: Change default wallpaper (W.I.P)
 cd ../../vendor/evolution/rro_overlays/EvolutionXConfigOverlay/res/drawable-nodpi
 rm default_wallpaper.png
-wget https://api.ozip.my.id/default_wallpaper.png
+wget -q https://api.ozip.my.id/default_wallpaper.png
