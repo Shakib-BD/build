@@ -28,3 +28,8 @@ wget https://api.ozip.my.id/media_extractor.patch
 cd frameworks/av
 git apply ../../media_codecs.patch
 git apply ../../media_extractor.patch
+
+# Evox: Change default wallpaper (W.I.P)
+cd ../../vendor/evolution/rro_overlays/EvolutionXConfigOverlay/res/drawable-nodpi
+rm default_wallpaper.png
+wget https://api.ozip.my.id/default_wallpaper.png
