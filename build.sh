@@ -1,4 +1,4 @@
 #!/bin/bash
 . build/envsetup.sh
-lunch evolution_merlinx-user
-mka evolution
+lunch aosp_merlinx-user
+m droid
