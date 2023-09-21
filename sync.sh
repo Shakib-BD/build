@@ -19,8 +19,8 @@ curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh
 
 # mt6768-common: Nikita GCam PATCH
 cd ../../../
-#rm device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
-#wget -q https://api.ozip.my.id/NGCam_8.2.300-v1.8.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
+rm device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
+wget -q https://api.ozip.my.id/NGCam_7.4.104-v2.0_eng.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
 
 # Media: mediatek: codecs & extractor PATCH
 wget -q https://api.ozip.my.id/media_codecs.patch
