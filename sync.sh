@@ -1,6 +1,6 @@
 #!/bin/bash
-repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b tiramisu-jem -g default,-mips,-darwin,-notdefault
-git clone https://github.com/mitsu00/local_manifest.git --depth 1 -b evox-13 .repo/local_manifests
+repo init --depth=1 --no-repo-verify -u https://github.com/VoltageOS/manifest.git -b 13 -g default,-mips,-darwin,-notdefault
+git clone https://github.com/Shakib-BD/local_manifest.git --depth 1 -b voltage-13 .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # check
@@ -28,8 +28,3 @@ wget -q https://api.ozip.my.id/media_extractor.patch
 cd frameworks/av
 git am ../../media_codecs.patch
 git am ../../media_extractor.patch
-
-# Evox: Change default wallpaper (W.I.P)
-cd ../../vendor/evolution/rro_overlays/EvolutionXConfigOverlay/res/drawable-nodpi
-rm default_wallpaper.png
-wget -q https://api.ozip.my.id/default_wallpaper.png
