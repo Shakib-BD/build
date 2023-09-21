@@ -1,4 +1,4 @@
 #!/bin/bash
 . build/envsetup.sh
 lunch evolution_merlinx-user
-make evolution -j48
+make evolution -j64
