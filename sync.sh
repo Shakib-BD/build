@@ -20,7 +20,13 @@ curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh
 # mt6768-common: Nikita GCam PATCH
 cd ../../../
 rm device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
-wget -q https://api.ozip.my.id/NGCam_8.2.300-v1.8.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
+wget -q https://api.ozip.my.id/NGCam_7.4.104-v2.0_eng.apk -O device/xiaomi/mt6768-common/GCamPrebuilt/GCamPrebuilt.apk
+
+# stagefright: remove HW_TEXTRUE usage from SurfaceMediaSource
+# git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/ArrowOS/android_frameworks_av/commit/a727c1f68fd30c8e6a4068db9dc26670d4a78f6c.patch")"
+
+# REThreaded: Use gen- and delete- textures on all render engines
+# git -C "frameworks/native" am <<<"$(curl -sL "https://github.com/ArrowOS/android_frameworks_native/commit/1e483eea5cf3b4972939a313652aebac42a1561c.patch")"
 
 # Media: mediatek: codecs & extractor PATCH
 wget -q https://api.ozip.my.id/media_codecs.patch
