@@ -1,4 +1,4 @@
 #!/bin/bash
 . build/envsetup.sh
-lunch evolution_merlinx-user
-make evolution -j64
+lunch lineage_merlinx-user
+make bacon
